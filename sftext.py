@@ -304,3 +304,9 @@ class SFText():
             self.scroll(-500)
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_END:
             self.scroll('end')
+
+    def on_mouse_scroll(self, event):
+        if event.button == 4:
+            self.scroll(50)
+        elif event.button == 5:
+            self.scroll(-50)

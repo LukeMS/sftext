@@ -71,6 +71,12 @@ if __name__ == '__main__':
                         alive = False
                     else:
                         sftext.on_key_press(event)
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+                    if event.button <= 3:
+                        # self.on_mouse_press(event)
+                        pass
+                    else:
+                        sftext.on_mouse_scroll(event)
 
         sftext.on_update()
         pygame.display.flip()
